@@ -60,7 +60,7 @@
                     <i class="fas fa-search"></i>
                 </a>
                 <!--user-->
-                <a href="#">
+                <a href="#" class="user">
                     <i class="far fa-user"></i>
                 </a>
                 <!--cart icon-->
@@ -86,8 +86,54 @@
         </div>
     </div>
 
+    <!-- login and sign up form -->
+    <div class="form">
+        <!-- login -->
+        <div class="login-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
 
+            <!-- heading -->
+            <strong>Log In</strong>
+            <!-- inputs -->
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email">
+                <input type="password" placeholder="password" name="password">
+                <!-- submit btn -->
+                <input type="submit" value="Login">
 
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+            <a href="#" class="forget">Esqueceu sua senha</a>
+            <a href="#" class="sign-up-btn">Criar conta</a>
+        </div>
+
+        <!-- Sign up -->
+        <div class="sign-up-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!-- heading -->
+            <strong>Criar Conta</strong>
+            <!-- inputs -->
+            <form>
+                <input type="text" placeholder="Full Name" name="fullname">
+                <input type="email" placeholder="Example@gmail.com" name="email">
+                <input type="password" placeholder="password" name="password">
+                <!-- submit btn -->
+                <input type="submit" value="Criar Conta">
+
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+            <a href="#" class="forget">Já tem uma conta?</a>
+        </div>
+    </div>
 
 
 
@@ -104,6 +150,20 @@
     $(document).on('click', '.search-cancel', ()=>{
         $('.search-bar').removeClass('search-bar-active')
     });
+
+    //Login sign up form
+    $(document).on('click', '.user', ()=>{
+        $('.form').addClass('login-active')
+    });
+
+    $(document).on('click', '.sign-up-btn', ()=>{
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+
+    $(document).on('click', '.form-cancel', ()=>{
+        $('.form').removeClass('login-active')
+    });
+
     </script>
 
 </body>
