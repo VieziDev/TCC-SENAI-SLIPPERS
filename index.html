@@ -56,7 +56,7 @@
             <!--right menu-->
             <div class="right-menu">
                 <!--search-->
-                <a href="#">
+                <a href="#" class="search">
                     <i class="fas fa-search"></i>
                 </a>
                 <!--user-->
@@ -72,8 +72,35 @@
                 </a>
             </div>
         </div>
-
     </nav>
+    <!-- search bar -->
+    <div class="search-bar">
+        <!-- search input -->
+        <div class="search-input">
+            <!-- input -->
+            <input type="text" placeholder="Pesquise por um produto"/>
+            <!-- cancel btn -->
+            <a href="#" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- JQuery -->
+    <script src="js/JQuery.js"></script>
+    <!-- Script -->
+    <script type="text/javascript">
+    //For search bar
+    $(document).on('click', '.search', ()=>{
+        $('.search-bar').addClass('search-bar-active')
+    });
+    </script>
 
 </body>
 

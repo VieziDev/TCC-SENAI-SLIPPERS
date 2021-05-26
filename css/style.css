@@ -84,7 +84,8 @@ nav{
 }
 
 .menu a:hover,
-.right-menu a:hover{
+.right-menu a:hover,
+.search-cancel:hover{
     color: #1DAA99;
     transition: all ease 0.3s;
 }
@@ -137,3 +138,50 @@ nav{
     align-items: center;
     font-weight: 400;
 }
+
+.search-bar{
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px -5px 30px rgba(0,0,0,0.1);
+}
+
+.search-input{
+    width: 90%;
+    border-bottom: 2px solid #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.search-bar{
+    display: none;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 30px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 0px 20px;
+}
+
+.search-cancel{
+    color: #F44646;
+    font-size: 2rem;
+    padding-right: 40px;
+}
+
+.search-bar-active{
+    display: flex;
+}
+
