@@ -149,6 +149,8 @@ nav{
     display: flex;
     justify-content: center;
     box-shadow: 2px -5px 30px rgba(0,0,0,0.1);
+    z-index: 101;
+    animation: search 0.3s;
 }
 
 .search-input{
@@ -185,3 +187,11 @@ nav{
     display: flex;
 }
 
+@keyframes search{
+    0%{
+        bottom: -300%;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
