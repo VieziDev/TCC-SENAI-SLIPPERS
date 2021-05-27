@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chinelo</title>
     <!--stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ligh slider css -->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <!-- JQuery -->
+    <script src="js/JQuery.js"></script>
+    <!-- light slider js -->
+    <script src="js/lightslider.js"></script>
     <!--shortcut-->
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <!--font awesome for icons-->
@@ -78,7 +84,7 @@
         <!-- search input -->
         <div class="search-input">
             <!-- input -->
-            <input type="text" placeholder="Pesquise por um produto"/>
+            <input type="text" placeholder="Pesquise por um produto" />
             <!-- cancel btn -->
             <a href="#" class="search-cancel">
                 <i class="fas fa-times"></i>
@@ -86,83 +92,146 @@
         </div>
     </div>
 
-    <!-- login and sign up form -->
+    <!---login and sign up--------------------------------->
     <div class="form">
-        <!-- login -->
+        <!--login---------->
         <div class="login-form">
-            <!-- cancel btn -->
+            <!--cancel btn---------------->
             <a href="#" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>
-
-            <!-- heading -->
-            <strong>Log In</strong>
-            <!-- inputs -->
+            <strong>Login</strong>
+            <!--inputs-->
             <form>
-                <input type="email" placeholder="Example@gmail.com" name="email">
-                <input type="password" placeholder="password" name="password">
-                <!-- submit btn -->
-                <input type="submit" value="Login">
-
+                <input type="email" name="email" placeholder="Example@gmail.com" required />
+                <input type="password" name="password" placeholder="Senha" required />
+                <input type="submit" value="Login" />
             </form>
-            <!-- forget and sign up btn -->
+            <!--forget and sign up btn-->
             <div class="form-btns">
-            <a href="#" class="forget">Esqueceu sua senha</a>
-            <a href="#" class="sign-up-btn">Criar conta</a>
+                <a href="#" class="forget">Esqueceu sua senha?</a>
+                <a href="#" class="sign-up-btn">Criar conta</a>
+            </div>
         </div>
-
-        <!-- Sign up -->
+        <!--Sign up---------->
         <div class="sign-up-form">
-            <!-- cancel btn -->
+            <!--cancel btn---------------->
             <a href="#" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>
-
-            <!-- heading -->
             <strong>Criar Conta</strong>
-            <!-- inputs -->
+            <!--inputs-->
             <form>
-                <input type="text" placeholder="Full Name" name="fullname">
-                <input type="email" placeholder="Example@gmail.com" name="email">
-                <input type="password" placeholder="password" name="password">
-                <!-- submit btn -->
-                <input type="submit" value="Criar Conta">
-
+                <input type="text" name="fullname" placeholder="Nome Completo" required />
+                <input type="email" name="email" placeholder="Example@gmail.com" required />
+                <input type="password" name="password" placeholder="Senha" required />
+                <input type="submit" value="Criar Conta" />
             </form>
-            <!-- forget and sign up btn -->
+            <!--forget and sign up btn-->
             <div class="form-btns">
-            <a href="#" class="forget">Já tem uma conta?</a>
+                <a href="#" class="already-account">Já possui uma conta>?</a>
+            </div>
         </div>
     </div>
 
+    <!-- Full Slider -->
+
+    <ul id="adaptive" class="cs-hidden">
+        <!-- box 1 -->
+        <li class="item-a">
+            <!-- box -->
+            <div class="full-slider-box f-slider-1">
+                <!-- slider text container -->
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Oferta Limitada</span>
+                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <a href="#" class="f-slider-btn">Comprar agora</a>
+                    </div>
+        
+                </div>
+            </div>
+        </li>
+        <li class="item-a">
+            <!-- box -->
+            <div class="full-slider-box f-slider-2">
+                <!-- slider text container -->
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Oferta Limitada</span>
+                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <a href="#" class="f-slider-btn">Comprar agora</a>
+                    </div>
+        
+                </div>
+            </div>
+        </li>
+        <li class="item-a">
+            <!-- box -->
+            <div class="full-slider-box f-slide-3">
+                <!-- slider text container -->
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Oferta Limitada</span>
+                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <a href="#" class="f-slider-btn">Comprar agora</a>
+                    </div>
+        
+                </div>
+            </div>
+        </li>
+</ul>
 
 
 
-    <!-- JQuery -->
-    <script src="js/JQuery.js"></script>
+
+
+
+
+
+
+
+
+   
+
+    
     <!-- Script -->
     <script type="text/javascript">
-    //For search bar
-    $(document).on('click', '.search', ()=>{
-        $('.search-bar').addClass('search-bar-active')
-    });
+        //For search bar
+        $(document).on('click', '.search', () => {
+            $('.search-bar').addClass('search-bar-active')
+        });
 
-    $(document).on('click', '.search-cancel', ()=>{
-        $('.search-bar').removeClass('search-bar-active')
-    });
+        $(document).on('click', '.search-cancel', () => {
+            $('.search-bar').removeClass('search-bar-active')
+        });
 
-    //Login sign up form
-    $(document).on('click', '.user', ()=>{
-        $('.form').addClass('login-active')
-    });
+        //For login and sign up
+        $(document).on('click', '.user,.already-account', function () {
+            $('.form').addClass('login-active').removeClass('sign-up-active')
+        });
 
-    $(document).on('click', '.sign-up-btn', ()=>{
-        $('.form').addClass('sign-up-active').removeClass('login-active')
-    });
+        $(document).on('click', '.sign-up-btn', function () {
+            $('.form').addClass('sign-up-active').removeClass('login-active')
+        });
 
-    $(document).on('click', '.form-cancel', ()=>{
-        $('.form').removeClass('login-active')
-    });
+        $(document).on('click', '.form-cancel', function () {
+            $('.form').removeClass('login-active').removeClass('sign-up-active')
+        });
+
+        //Slider
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeigh: true,
+                auto:true,
+                item:1,
+                slideMargin:0,
+                loop:true
+            });
+        })
 
     </script>
 
