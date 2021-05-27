@@ -140,31 +140,35 @@
         <!-- box 1 -->
         <li class="item-a">
             <!-- box -->
-            <div class="full-slider-box f-slider-1">
+            <div class="full-slider-box f-slide-1">
                 <!-- slider text container -->
                 <div class="slider-text-container">
-        
+
                     <div class="f-slider-text">
-                        <span>Oferta Limitada</span>
-                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                            <font> Lorem ipsum dolor sit amet consectetur adipisicing elit. </font>
+                        </strong>
                         <a href="#" class="f-slider-btn">Comprar agora</a>
                     </div>
-        
+
                 </div>
             </div>
         </li>
         <li class="item-a">
             <!-- box -->
-            <div class="full-slider-box f-slider-2">
+            <div class="full-slider-box f-slide-2">
                 <!-- slider text container -->
                 <div class="slider-text-container">
-        
+
                     <div class="f-slider-text">
-                        <span>Oferta Limitada</span>
-                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                            <font> Lorem ipsum dolor sit amet consectetur adipisicing elit.</font>
+                        </strong>
                         <a href="#" class="f-slider-btn">Comprar agora</a>
                     </div>
-        
+
                 </div>
             </div>
         </li>
@@ -173,31 +177,110 @@
             <div class="full-slider-box f-slide-3">
                 <!-- slider text container -->
                 <div class="slider-text-container">
-        
+
                     <div class="f-slider-text">
-                        <span>Oferta Limitada</span>
-                        <strong>30% de desconto <br/><font> com código! </font></strong>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                            <font> Lorem ipsum dolor sit amet consectetur adipisicing elit. </font>
+                        </strong>
                         <a href="#" class="f-slider-btn">Comprar agora</a>
                     </div>
-        
+
                 </div>
             </div>
         </li>
-</ul>
+    </ul>
 
+    <!-- Featured Categories -->
+    <div class="feature-heading">
+        <h2>Featured Categories</h2>
+    </div>
 
+    <ul id="autoWidth" class="cs-hidden">
+        <!-- 1 -->
+        <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_1.jpg">
+            </div>
+            <!-- text -->
+            <span>Camiseta</span>
+        </li>
+          <!-- 2 -->
+          <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_2.jpg">
+            </div>
+            <!-- text -->
+            <span>Camiseta</span>
+        </li>
+          <!-- 3 -->
+          <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_3.jpg">
+            </div>
+            <!-- text -->
+            <span>Camiseta</span>
+        </li>
+          <!-- 4 -->
+          <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_4.jpg">
+            </div>
+            <!-- text -->
+            <span>Almofada</span>
+        </li>
+          <!-- 5 -->
+          <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_5.jpg">
+            </div>
+            <!-- text -->
+            <span>Celular</span>
+        </li>
+        <!-- 6 -->
+        <li class="item">
+            <!-- Feature box -->
+            <div class="feature-box">
+                <a href="#"></a>
+                <img src="images/feature_6.jpg">
+            </div>
+            <!-- text -->
+            <span>Sacola</span>
+        </li>
 
-
-
-
-
-
-
-
-
-   
-
+    </ul>
     
+    <!-- new arrival -->
+    <section class="new-arrival">
+        <!-- headign -->
+        <div class="arrival-heading">
+
+            <strong>New Arrival</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Script -->
     <script type="text/javascript">
         //For search bar
@@ -223,14 +306,25 @@
         });
 
         //Slider
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#adaptive').lightSlider({
                 adaptiveHeigh: true,
-                auto:true,
-                item:1,
-                slideMargin:0,
-                loop:true
+                auto: true,
+                item: 1,
+                slideMargin: 0,
+                loop: true
             });
+        })
+
+        //Feature Slider
+        $(document).ready(function(){
+            $('#autoWidth').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSlideLoad: function(){
+                    $(autoWidth).removeClass('cs-hidden');
+                }
+            })
         })
 
     </script>
