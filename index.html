@@ -42,6 +42,11 @@
             <a href="#" class="logo">
                 <img src="images/icon.png">
             </a>
+            <!-- menu icon -->
+            <div class="toggle"></div>
+
+
+
             <!--menu-->
             <ul class="menu">
                 <li><a href="#">Home</a></li>
@@ -62,11 +67,11 @@
             <!--menu lateral-->
             <div class="right-menu">
                 <!--pesquisa-->
-                <a href="#" class="search">
+                <a href="javascript::void(0)" class="search">
                     <i class="fas fa-search"></i>
                 </a>
                 <!--user-->
-                <a href="#" class="user">
+                <a href="javascript::void(0)" class="user">
                     <i class="far fa-user"></i>
                 </a>
                 <!--icone carrinho-->
@@ -86,7 +91,7 @@
             <!-- input -->
             <input type="text" placeholder="Pesquise por um produto" />
             <!-- botão cancelar -->
-            <a href="#" class="search-cancel">
+            <a href="javascript::void(0)" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
         </div>
@@ -97,7 +102,7 @@
         <!--login---------->
         <div class="login-form">
             <!--botao cancelar---------------->
-            <a href="#" class="form-cancel">
+            <a href="javascript::void(0)" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>
             <strong>Login</strong>
@@ -110,13 +115,13 @@
             <!--esqueceu senha e criar conta-->
             <div class="form-btns">
                 <a href="#" class="forget">Esqueceu sua senha?</a>
-                <a href="#" class="sign-up-btn">Criar conta</a>
+                <a href="javascript::void(0)" class="sign-up-btn">Criar conta</a>
             </div>
         </div>
         <!--Criar conta-->
         <div class="sign-up-form">
             <!----botao cancelar------>
-            <a href="#" class="form-cancel">
+            <a href="javascript::void(0)" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>
             <strong>Criar Conta</strong>
@@ -129,7 +134,7 @@
             </form>
             <!--botao esqueceu senha e criar conta-->
             <div class="form-btns">
-                <a href="#" class="already-account">Já possui uma conta>?</a>
+                <a href="javascript::void(0)" class="already-account">Já possui uma conta>?</a>
             </div>
         </div>
     </div>
@@ -536,6 +541,43 @@
         </div>
     </section>
 
+    <!-- services -->
+    <section class="services">
+        <!-- services-box -->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Frete Gratis</span>
+            <p>Frete gratis para todo Brasil</p>
+        </div>
+        <!-- services-box -->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Suporte 24 horas</span>
+            <p>Suporte online 24 horas todos os dias da semana</p>
+        </div>
+        <!-- services-box -->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>Garantia de 30 dias</span>
+            <p>Garantia de 30 dias para todos os produtos da loja</p>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <!-- copyright -->
+        <span class="copyright">
+            Copyright 2020 - GoingToInternet
+        </span>
+        <!-- subscribe -->
+        <div class="subscribe">
+            <form>
+                <input type="email" placeholder="example@emai.com" required/>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
 
 
 
@@ -589,6 +631,24 @@
                 onSlideLoad: () => {
                     $(autoWidth).removeClass('cs-hidden');
                 }
+            })
+        })
+
+        //Fixar menu ao rolar
+        $(window).scroll(()=>{
+            if($(document).scrollTop() > 50){
+                $('.navigation').addClass('fix-nav');
+            }
+            else{
+                $('.navigation').removeClass('fix-nav');
+            }
+        });
+
+        //menu responsivo
+        $(document).ready(()=>{
+            $('.toggle').click(()=>{
+                $('.toggle').toggleClass('active')
+                $('.navigation').toggleClass('active')
             })
         })
 
