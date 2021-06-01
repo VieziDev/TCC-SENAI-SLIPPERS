@@ -75,6 +75,13 @@ nav{
 
 .menu li a{
     color: #555555;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.7);
+}
+
+.fa-home{
+    font-size: 1.3rem;
 }
 
 .right-menu a{
@@ -211,7 +218,8 @@ nav{
     z-index: 102;
 }
 .login-form,
-.sign-up-form{
+.sign-up-form,
+.cart-form{
     width:420px;
     padding: 20px 10px;
     background-color: #ffffff;
@@ -225,7 +233,8 @@ nav{
  
 }
 .login-form form,
-.sign-up-form form{
+.sign-up-form form,
+.cart-form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +242,8 @@ nav{
     width: 100%;
 }
 .login-form strong,
-.sign-up-form strong{
+.sign-up-form strong,
+.cart-form{
     color: #272727;
     font-size: 2rem;
     margin: 2px 7px 7px 7px;
@@ -392,7 +402,8 @@ nav{
 }
 
 .feature-heading h2,
-.arrival-heading strong{
+.arrival-heading strong,
+.cart-heading{
     font-size: 1.5rem;
     color: #1b1919;
     letter-spacing: 1px;
@@ -439,16 +450,18 @@ nav{
     margin: 10px auto 40px auto;
 }
 
-.arrival-heading{
+.arrival-heading,
+.cart-heading{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.arrival-heading strong{
+.arrival-heading strong,
+.cart-heading{
     color: #ffffff;
-    background-color: #202020;
+    background-color: #1DAA99;
     font-weight: 500;
 }
 
@@ -458,7 +471,8 @@ nav{
     font-size: 0.9rem;
 }
 
-.product-container{
+.product-container,
+.cart-container{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -468,6 +482,16 @@ nav{
 }
 
 .product-box{
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f7f7f7;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.product-box-cart{
     display: flex;
     flex-grow: 0.5;
     flex-direction: column;
@@ -541,7 +565,8 @@ nav{
     display: flex;
 }
 
-.new-arrival{
+.new-arrival,
+.cart{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -575,14 +600,14 @@ nav{
 .sale-text{
     position: absolute;
     left: 20%;
-    top: 50%;
+    top: 30%;
     transform: translate(-20%, -50%);
     display: flex;
     flex-direction: column;
 }
 
 .sale-box a{
-    color: #1b1919;
+    color: #ffffff;
 }
 
 .sale-box strong{
@@ -866,3 +891,4 @@ footer{
         width: 90%;
     }
 }
+
