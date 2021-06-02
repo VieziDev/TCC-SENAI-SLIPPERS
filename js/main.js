@@ -20,6 +20,12 @@ $(document).on('click', '.form-cancel', () => {
     $('.form').removeClass('login-active').removeClass('sign-up-active')
 });
 
+//Botao loja
+$(document).on('click', '.fas.fa-store', () => {
+    $('html, body').animate({ scrollTop: 550}, 500);
+})
+
+
 //Slider
 $(document).ready(() => {
     $('#adaptive').lightSlider({
@@ -29,17 +35,6 @@ $(document).ready(() => {
         slideMargin: 0,
         loop: true
     });
-})
-
-//Feature Slider
-$(document).ready( () => {
-    $('#autoWidth').lightSlider({
-        autoWidth: true,
-        loop: true,
-        onSlideLoad: () => {
-            $(autoWidth).removeClass('cs-hidden');
-        }
-    })
 })
 
 //Fixar menu ao rolar

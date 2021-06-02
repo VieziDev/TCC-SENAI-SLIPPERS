@@ -251,6 +251,7 @@ nav{
     letter-spacing: 0.5px;
     font-weight: 500;
 }
+
 .login-form input,
 .sign-up-form input{
     width:90%;
@@ -261,10 +262,12 @@ nav{
     outline: none;
     border-radius: 7px;
 }
+
 .login-form input::placeholder,
 .sign-up-form input::placeholder{
     color: rgba(0,0,0,0.5);
 }
+
 .login-form input[type="submit"],
 .sign-up-form input[type="submit"]{
     background-color: #1DAA99;
@@ -276,6 +279,19 @@ nav{
     border-radius: 3px;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 }
+
+.login-form input[type="submit"]:hover,
+.sign-up-form input[type="submit"]:hover{
+    background-color: #f76b64;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
 .form-btns{
     width: 90%;
     display: flex;
@@ -389,6 +405,21 @@ nav{
     margin-top: 10px;
     /*margin-left: 1000px;*/
     box-shadow: rgba(0,0,0,0.5);
+}
+
+.f-slider-btn:hover{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #f76b64;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    /*margin-left: 1000px;*/
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 }
 
 .f-slider-text strong font{
