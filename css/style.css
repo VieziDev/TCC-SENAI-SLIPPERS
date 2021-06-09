@@ -25,6 +25,10 @@ nav{
     z-index: 100;
 }
 
+.gray{
+    color: #666666;
+}
+
 .social-call{
     height: 40px;
     border: 1px solid rgba(0,0,0,0.05);
@@ -85,7 +89,7 @@ nav{
 }
 
 .right-menu a{
-    margin: 0px 10px;
+    margin: 10px 10px;
     font-size: 1.2rem;
     color: rgba(0,0,0,0.7);
 }
@@ -217,8 +221,24 @@ nav{
     flex-direction: column;
     z-index: 102;
 }
+
+
+
+
 .login-form,
-.sign-up-form,
+.sign-up-form{
+    width:420px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+}
+
 .cart-form{
     width:420px;
     padding: 20px 10px;
@@ -230,20 +250,35 @@ nav{
     flex-direction: column;
     border-radius: 5px;
     position: relative;
- 
 }
+
+.cart-form ul{
+    padding: 0px;
+    align-items: center;
+}
+
+
+.cart-form strong{
+    color: #272727;
+    font-size: 2rem;
+    margin: 2px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
 .login-form form,
-.sign-up-form form,
-.cart-form{
+.sign-up-form form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
+
+
 .login-form strong,
-.sign-up-form strong,
-.cart-form{
+.sign-up-form strong{
     color: #272727;
     font-size: 2rem;
     margin: 2px 7px 7px 7px;
@@ -262,6 +297,7 @@ nav{
     outline: none;
     border-radius: 7px;
 }
+
 
 .login-form input::placeholder,
 .sign-up-form input::placeholder{
@@ -299,25 +335,34 @@ nav{
     align-items: center;
     margin-top: 10px;
 }
+
 .form-btns a{
     color: #4d4d4d;
     font-size: 0.9rem;
 }
+
 .sign-up-btn{
     border-bottom: 1px solid #868686;
     line-height: 16px;
 }
+
 .form-cancel{
     position: absolute;
     right: 20px;
     top: 10px;
     color: #868686;
 }
+
 .login-form,
 .sign-up-form,
 .form{
     display: none;
 }
+
+.cart-form{
+    display: none;
+}
+
 .login-active,
 .login-active .login-form{
     display: flex;
@@ -329,6 +374,14 @@ nav{
     display: flex;
     animation: fade 0.3s;
 }
+
+.cart-active,
+.cart-active .cart-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+
+
 @keyframes fade{
     0%{
         opacity: 0;

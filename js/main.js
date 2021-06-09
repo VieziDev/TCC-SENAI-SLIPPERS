@@ -9,7 +9,7 @@ $(document).on('click', '.search-cancel', () => {
 
 //For login and sign up
 $(document).on('click', '.user,.already-account', () => {
-    $('.form').addClass('login-active').removeClass('sign-up-active')
+    $('.form').addClass('login-active').removeClass('sign-up-active, cart-active')
 });
 
 $(document).on('click', '.sign-up-btn', () => {
@@ -20,6 +20,14 @@ $(document).on('click', '.form-cancel', () => {
     $('.form').removeClass('login-active').removeClass('sign-up-active')
 });
 
+//Carrinho de compras
+$(document).on('click', '.cart-icon', () => {
+    $('.form').addClass('cart-active')
+});
+
+$(document).on('click', '.form-cancel', () => {
+    $('.form').removeClass('cart-active')
+});
 //Botao loja
 $(document).on('click', '.fas.fa-store', () => {
     $('html, body').animate({ scrollTop: 550}, 500);

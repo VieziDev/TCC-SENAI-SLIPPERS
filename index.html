@@ -45,8 +45,6 @@
             <!-- menu icon -->
             <div class="toggle"></div>
 
-
-
             <!--menu-->
             <ul class="menu">
                 <li><a href="index.html"><i class="fas fa-home"></i></a></li>
@@ -63,7 +61,7 @@
                     <i class="far fa-user"></i>
                 </a>
                 <!--icone carrinho-->
-                <a href="cart.html">
+                <a href="javascript::void(0)" class="cart-icon">
                     <i class="fas fa-shopping-cart">
                         <!-- numero de produtos no carrinho -->
                         <span class="num-cart-product">0</span>
@@ -125,11 +123,21 @@
                 <a href="javascript::void(0)" class="already-account">Já possui uma conta>?</a>
             </div>
         </div>
+        <!-- Carrinho -->
+        <div class="cart-form">
+            <a href="javascript::void(0)" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Carrinho</strong>
+            <ul>
+                <li class="gray">Seu carrinho está vazio!</li>
+            </ul>
+        </div>
     </div>
 
+    </div>
 
     <!-- Full Slider -->
-
     <ul id="adaptive" class="cs-hidden">
         <!-- box 1 -->
         <li class="item-a">
@@ -400,24 +408,7 @@
                     <span class="p-price">R$15,00</span>
                 </div>
             </div>
-                  <!-- product box 7 -->
-                  <div class="product-box">
-
-                    <!-- img -->
-                    <div class="product-img">
-                        <!-- adicionar ao carrinho -->
-                        <a href="#" class="add-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <img src="images/slippers.png" />
-                    </div>
-                    <!-- detalhes -->
-                    <div class="product-details">
-                        <a href="#">Chinelo Azul</a>
-                        <span class="p-price">R$15,00</span>
-                    </div>
-                </div>
-                      <!-- product box 7 -->
+            <!-- product box 7 -->
             <div class="product-box">
 
                 <!-- img -->
@@ -434,24 +425,41 @@
                     <span class="p-price">R$15,00</span>
                 </div>
             </div>
-                  <!-- product box 7 -->
-                  <div class="product-box">
+            <!-- product box 7 -->
+            <div class="product-box">
 
-                    <!-- img -->
-                    <div class="product-img">
-                        <!-- adicionar ao carrinho -->
-                        <a href="#" class="add-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <img src="images/slippers.png" />
-                    </div>
-                    <!-- detalhes -->
-                    <div class="product-details">
-                        <a href="#">Chinelo Azul</a>
-                        <span class="p-price">R$15,00</span>
-                    </div>
+                <!-- img -->
+                <div class="product-img">
+                    <!-- adicionar ao carrinho -->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="images/slippers.png" />
                 </div>
-                      <!-- product box 7 -->
+                <!-- detalhes -->
+                <div class="product-details">
+                    <a href="#">Chinelo Azul</a>
+                    <span class="p-price">R$15,00</span>
+                </div>
+            </div>
+            <!-- product box 7 -->
+            <div class="product-box">
+
+                <!-- img -->
+                <div class="product-img">
+                    <!-- adicionar ao carrinho -->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="images/slippers.png" />
+                </div>
+                <!-- detalhes -->
+                <div class="product-details">
+                    <a href="#">Chinelo Azul</a>
+                    <span class="p-price">R$15,00</span>
+                </div>
+            </div>
+            <!-- product box 7 -->
             <div class="product-box">
 
                 <!-- img -->
@@ -635,17 +643,10 @@
         </div>
     </footer>
 
+
+
     <!-- Script -->
     <script type="text/javascript" src="js/main.js"></script>
-
-
-
-
-
-
-
-
-
 
 </body>
 
