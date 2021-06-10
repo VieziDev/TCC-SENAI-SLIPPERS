@@ -45,11 +45,6 @@
             <!-- menu icon -->
             <div class="toggle"></div>
 
-            <!--menu-->
-            <ul class="menu">
-                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                <li><a href="#"><i class="fas fa-store"></i></a></li>
-            </ul>
             <!--menu lateral-->
             <div class="right-menu">
                 <!--pesquisa-->
@@ -104,6 +99,7 @@
                 <a href="javascript::void(0)" class="sign-up-btn">Criar conta</a>
             </div>
         </div>
+
         <!--Criar conta-->
         <div class="sign-up-form">
             <!----botao cancelar------>
@@ -123,15 +119,55 @@
                 <a href="javascript::void(0)" class="already-account">Já possui uma conta>?</a>
             </div>
         </div>
+
         <!-- Carrinho -->
         <div class="cart-form">
             <a href="javascript::void(0)" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>
-            <strong>Carrinho</strong>
-            <ul>
-                <li class="gray">Seu carrinho está vazio!</li>
-            </ul>
+            <strong>Carrinho<i class="fas fa-shopping-cart"></i></strong>
+            <table class="cart-table">
+                <tr class="product-title">
+                    <th>Descrição</th>
+                    <th>Qtde</th>
+                    <th>Preço</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr class="product">
+                    <td><img src=""><span>Produto</span></td>
+                    <td><select name="select" id="select">
+                            <option value="value1">1</option>
+                            <option value="value2">2</option>
+                            <option value="value3">3</option>
+                            <option value="value4">4</option>
+                            <option value="value5">5</option>
+                        </select></td>
+                    <td><span>R$0</span></td>
+                    <td><span>R$0</span></td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+            </table>
+            <table class="cart-info">
+                <tr>
+                    <td>
+                        Subtotal <span>R$</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Frete <span>R$</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Total <span>R$</span>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" value="Escolha mais produtos">
+                <input type="submit" value="Finalizar Compra">
+            </div>
         </div>
     </div>
 
@@ -193,77 +229,7 @@
         </li>
     </ul>
 
-    <!-- Categorias -->
-
-    <!-- <div class="feature-heading"> -->
-    <!-- <h2>Categorias</h2> -->
-    <!-- </div> -->
-
-    <!-- <ul id="autoWidth" class="cs-hidden"> -->
-    <!-- 1 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Camiseta</span> -->
-    <!-- </li> -->
-    <!-- 2 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Camiseta</span> -->
-    <!-- </li> -->
-    <!-- 3 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Camiseta</span> -->
-    <!-- </li> -->
-    <!-- 4 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Almofada</span> -->
-    <!-- </li> -->
-    <!-- 5 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Celular</span> -->
-    <!-- </li> -->
-    <!-- 6 -->
-    <!-- <li class="item"> -->
-    <!-- Categoria -->
-    <!-- <div class="feature-box"> -->
-    <!-- <a href="#"></a> -->
-    <!-- <img src="images/chinelo-vermelho.jpg"> -->
-    <!-- </div> -->
-    <!-- text -->
-    <!-- <span>Sacola</span> -->
-    <!-- </li> -->
-
-    <!-- </ul> -->
-
-    <!-- lançamentos -->
+    <!-- Loja -->
     <section class="new-arrival">
         <!-- heading -->
         <div class="arrival-heading">
@@ -522,7 +488,7 @@
         </div>
     </section>
 
-    <!-- new arrival -->
+    <!-- Lançamento -->
     <section class="new-arrival">
         <!-- headign -->
         <div class="arrival-heading">

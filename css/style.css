@@ -58,7 +58,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 45px;
+    padding: 10px 45px;
 }
 
 .logo img{
@@ -240,7 +240,8 @@ nav{
 }
 
 .cart-form{
-    width:420px;
+    width:1000px;
+    height: 600px;
     padding: 20px 10px;
     background-color: #ffffff;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
@@ -252,12 +253,6 @@ nav{
     position: relative;
 }
 
-.cart-form ul{
-    padding: 0px;
-    align-items: center;
-}
-
-
 .cart-form strong{
     color: #272727;
     font-size: 2rem;
@@ -265,8 +260,24 @@ nav{
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
+    position: relative;
+    bottom: 30%;
 }
 
+.cart-table{
+    width: 950px;
+    position: relative;
+    bottom: 30%;
+}
+
+.cart-table, .cart-table th, .cart-table td{
+    border: 1px solid #808080;
+}
+
+.cart-info td{
+    font-size: 1rem;
+    
+}
 .login-form form,
 .sign-up-form form{
     display: flex;
