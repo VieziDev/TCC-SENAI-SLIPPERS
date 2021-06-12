@@ -20,14 +20,6 @@ $(document).on('click', '.form-cancel', () => {
     $('.form').removeClass('login-active').removeClass('sign-up-active')
 });
 
-//Carrinho de compras
-$(document).on('click', '.cart-icon', () => {
-    $('.form').addClass('cart-active')
-});
-
-$(document).on('click', '.form-cancel', () => {
-    $('.form').removeClass('cart-active')
-});
 //Botao loja
 $(document).on('click', '.fas.fa-store', () => {
     $('html, body').animate({ scrollTop: 550}, 500);
