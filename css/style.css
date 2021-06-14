@@ -296,14 +296,15 @@ table {
     align-items: end;
     flex-direction: column;
     margin-top: 2rem;
-    left: 28%;
-    position: relative;
+   
   }
   
   .total-price table {
     border-top: 3px solid #1DAA99;
-    width: 200%;
-    max-width: 35rem;
+    width: 90%;
+    max-width: 45rem;
+    margin-left: 550px;
+    margin-right: 100px;
   }
   
   td:last-child {
@@ -320,6 +321,47 @@ table {
     }
   }
 
+.cart-btns{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cart-btns input{
+    width:90%;
+    height: 45px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+
+.cart-btns input[type="submit"]{
+    background-color: #1DAA99;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+.cart-btns input[type="submit"]:hover{
+    background-color: #f76b64;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+.cart-btns input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
 
 .login-form,
 .sign-up-form{
@@ -443,11 +485,6 @@ table {
     animation: fade 0.3s;
 }
 
-.cart-active,
-.cart-active .cart-form{
-    display: flex;
-    animation: fade 0.3s;
-}
 
 
 @keyframes fade{
