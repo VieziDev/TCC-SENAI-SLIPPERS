@@ -322,19 +322,19 @@ table {
   }
 
 .cart-btns{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+    width: 100%;
 }
 
 .cart-btns input{
-    width:90%;
+    width:30%;
     height: 45px;
     margin: 6px 0px;
     padding: 0px 10px;
     border: 1px solid rgba(0,0,0,0.1);
     outline: none;
     border-radius: 7px;
+    left: 62%;
+    position: relative;
 }
 
 .cart-btns input[type="submit"]{
