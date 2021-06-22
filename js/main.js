@@ -9,7 +9,7 @@ $(document).on('click', '.search-cancel', () => {
 
 //For login and sign up
 $(document).on('click', '.user,.already-account', () => {
-    $('.form').addClass('login-active').removeClass('sign-up-active, cart-active')
+    $('.form').addClass('login-active').removeClass('sign-up-active')
 });
 
 $(document).on('click', '.sign-up-btn', () => {
@@ -20,6 +20,7 @@ $(document).on('click', '.form-cancel', () => {
     $('.form').removeClass('login-active').removeClass('sign-up-active')
 });
 
+//Product form
 
 //Slider
 $(document).ready(() => {
@@ -41,4 +42,5 @@ $(window).scroll(()=>{
         $('.navigation').removeClass('fix-nav');
     }
 });
+
 

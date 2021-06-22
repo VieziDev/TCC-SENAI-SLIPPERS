@@ -222,6 +222,20 @@ nav{
     z-index: 102;
 }
 
+.form-item{
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+}
+
 .cart {
     margin: 2rem auto
   }
@@ -292,17 +306,17 @@ table {
   
   .total-price {
     display: flex;
+    font-size: 1.2rem;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
-    width: 50%;
+    width: 90%;
   }
   
   .total-price table {
     border-top: 3px solid #1DAA99;
-    width: 90%;
-    max-width: 45rem;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
   }
@@ -323,11 +337,11 @@ table {
 
 .cart-btns{
     align-items: center;
-    justify-content: center;
 }
 
 .cart-btns input{
-    width:100%;
+    width: 100%;
+    align-items: center;
     height: 45px;
     margin: 6px 0px;
     padding: 0px 10px;
@@ -363,7 +377,8 @@ table {
 }
 
 .login-form,
-.sign-up-form{
+.sign-up-form,
+.item-form{
     width:420px;
     padding: 20px 10px;
     background-color: #ffffff;
@@ -377,7 +392,8 @@ table {
 }
 
 .login-form form,
-.sign-up-form form{
+.sign-up-form form,
+.item-form form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,11 +480,9 @@ table {
 
 .login-form,
 .sign-up-form,
-.form{
-    display: none;
-}
-
-.cart-form{
+.item-form,
+.form,
+.form-item{
     display: none;
 }
 
@@ -480,6 +494,12 @@ table {
  
 .sign-up-active,
 .sign-up-active .sign-up-form{
+    display: flex;
+    animation: fade 0.3s;
+}
+
+.item-form-active,
+.item-form-active .item-form-active{
     display: flex;
     animation: fade 0.3s;
 }
