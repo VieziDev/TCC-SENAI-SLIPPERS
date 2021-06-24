@@ -68,12 +68,19 @@
         <!-- input de pesquisa -->
         <div class="search-input">
             <!-- input -->
-            <input type="text" placeholder="Pesquise por um produto" />
+            <input type="text" placeholder="Pesquise por um produto" list="historic" />
             <!-- botão cancelar -->
             <a href="javascript::void(0)" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
         </div>
+        <datalist id="historic">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </datalist>
     </div>
 
     <!---login e criar conta-->
@@ -458,7 +465,7 @@
         <!-- product container -->
         <div class="cart-container">
             <!-- product box 1 -->
-            <div class="product-box-cart">
+            <div class="product-box">
 
                 <!-- img -->
                 <div class="product-img">
