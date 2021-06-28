@@ -228,7 +228,9 @@ nav{
 
 .cart {
     margin: 2rem auto
-  }
+}
+
+
 
 .cart strong{
     color: #272727;
@@ -265,6 +267,8 @@ table {
 
 }
 
+
+
   th {
     text-align: left;
     padding: 0.5rem;
@@ -286,6 +290,13 @@ table {
   td a {
     color: #F44646;
     font-size: 1.4rem;
+  }
+
+  td span{
+    font-size: 1.5rem;
+    color: #c5c5c5;
+    position: relative;
+    left: -3%;
   }
   
   td img {
@@ -1090,6 +1101,7 @@ footer{
   .product-detail .left {
     display: flex;
     flex-direction: column;
+    height: 45rem;
   }
   
   .product-detail .left .main {
@@ -1217,3 +1229,6 @@ footer{
   }
   
 
+#gray{
+    color: #c5c5c5;
+}
