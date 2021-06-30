@@ -189,9 +189,7 @@ nav{
     padding: 0px 20px;
 }
 
-.search-bar datalist{
-    
-}
+
 
 .search-cancel{
     color: #F44646;
@@ -296,7 +294,7 @@ table {
     font-size: 1.5rem;
     color: #c5c5c5;
     position: relative;
-    left: -3%;
+    left: -5%;
   }
   
   td img {
@@ -516,15 +514,15 @@ table {
 }
 
 .f-slide-1{
-   background-image: url();
+   background-image: url("/images/fundo.jpg");
 }
 
 .f-slide-2{
-    background-image: url();
+    background-image: url("/images/fundo.jpg");
 }
 
 .f-slide-3{
-    background-image: url();
+    background-image: url("/images/fundo.jpg");
 }
 
 .slider-text-container{
@@ -1180,6 +1178,15 @@ footer{
 
   .product-detail .addCart-btn .addCart {
     background: #1DAA99;
+    padding: 0.8rem 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  }
+
+  .product-detail .addCart-btn .addCart:hover{
+    background: #f76b64;
     padding: 0.8rem 4rem;
     color: #fff;
     text-transform: uppercase;
